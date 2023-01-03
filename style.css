@@ -1,0 +1,639 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.container {
+  margin-left: 1.6rem;
+  width: 34.3rem;
+}
+
+.container:first-child .hero-img {
+  margin-left: -1.6rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.2rem;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+.gallery-description {
+  width: 34.3rem;
+  line-height: 2.8rem;
+  color: #444444;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: 20.4rem 5.6rem;
+  height: 7.2rem;
+  margin-bottom: 12rem;
+}
+
+.location {
+  font-size: 2rem;
+  font-weight: 800;
+  background-color: #151515;
+  letter-spacing: 0.36rem;
+  padding: 2.4rem 3.2rem;
+}
+
+.btn-location {
+  background-color: #d5966c;
+  border: 2px solid #d5966c;
+}
+
+.art-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.first-img {
+  margin-bottom: 2.5rem;
+}
+
+.heading-secondary {
+  color: #151515;
+  text-transform: uppercase;
+  margin-bottom: 2.1rem;
+}
+
+.art-gallery-description {
+  color: #444444;
+  margin-bottom: 3.2rem;
+}
+
+.second-img,
+.third-img {
+  margin-bottom: 1.6rem;
+}
+
+.text-box {
+  background-color: #151515;
+  height: 29.3rem;
+  margin-bottom: 12rem;
+}
+
+.heading-tertiary {
+  margin-top: 4.8rem;
+  margin-left: 2.4rem;
+}
+
+.welcome-text {
+  line-height: 2.8rem;
+  padding: 2.4rem;
+}
+
+.footer {
+  margin: 0 auto;
+  background-color: #151515;
+  height: 33.6rem;
+  width: 37.5rem;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+  margin-left: 3.2rem;
+}
+
+.footer-header {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 4.8rem;
+}
+
+.gallery-details {
+  line-height: 2.6rem;
+  width: 31.1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary,
+.footer-header,
+.address,
+.footer-header-secondary {
+  font-weight: 900;
+}
+
+.gallery-description,
+.art-gallery-description,
+.gallery-details,
+.welcome-text,
+.address-description,
+.footer-description {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+.location,
+.heading-tertiary,
+.welcome-text,
+.footer-header,
+.gallery-details {
+  color: #ffffff;
+}
+
+.heading-secondary,
+.heading-tertiary {
+  font-size: 5rem;
+  line-height: 4.5rem;
+}
+
+.gallery-description,
+.art-gallery-description,
+.welcome-text,
+.address-description {
+  font-size: 1.8rem;
+}
+
+.gallery-details,
+.footer-description {
+  font-size: 1.6rem;
+}
+
+/* Location.html */
+.location-box {
+  background-image: url(img/mobile/image-map.png);
+  background-repeat: no-repeat;
+  height: 55rem;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.map-box {
+  display: grid;
+  grid-template-columns: 5.6rem 20.8rem;
+}
+
+.address-box {
+  background-color: #151515;
+  color: #ffffff;
+  height: 49.3rem;
+  padding-top: 4.8rem;
+  padding-left: 1.6rem;
+}
+
+.address {
+  color: #d5966c;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.heading-secondary--outline {
+  color: #ffffff;
+  margin-bottom: 4.8rem;
+}
+
+.footer-container {
+  background-color: #d5966c;
+}
+
+.address-description {
+  line-height: 2.8rem;
+  width: 34.3rem;
+  margin-bottom: 5.6rem;
+}
+
+.address-description--outline {
+  margin-bottom: 2rem;
+}
+
+.footer-header-secondary {
+  color: #151515;
+  font-size: 2rem;
+  padding-top: 4.8rem;
+  padding-left: 3.2rem;
+}
+
+.footer-description {
+  color: #151515;
+  line-height: 2.6rem;
+  padding-top: 3.8rem;
+  padding-left: 3.2rem;
+  margin-bottom: 4rem;
+  width: 34.1rem;
+  height: 12.4rem;
+}
+
+.social-links--outline {
+  padding-top: 3.8rem;
+  padding-left: 3.2rem;
+  padding-bottom: 4.8rem;
+}
+
+/*  376px*/
+@media (min-width: 23.5em) {
+  .container,
+  .location-container {
+    margin: 0 auto;
+  }
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .container:first-child .hero-img {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-container {
+    background-image: url(img/tablet/image-hero.jpg);
+    background-repeat: no-repeat;
+    width: 76.8rem;
+  }
+
+  .header {
+    padding: 15rem 39rem;
+    gap: 4.8rem;
+    margin: 0 2rem;
+  }
+
+  .heading-primary {
+    font-size: 7rem;
+    line-height: 6.5rem;
+  }
+
+  .gallery-description {
+    width: 33.9rem;
+    height: 11.2rem;
+  }
+
+  .section-gallery {
+    display: flex;
+    justify-content: center;
+  }
+
+  .art-gallery {
+    grid-template-columns: 23.4rem 17.8rem 28rem;
+  }
+
+  .description-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .text-box {
+    grid-column: -2 / -1;
+    grid-row: 3 / 4;
+  }
+
+  .description-box {
+    margin-top: 3.4rem;
+  }
+
+  .first-img,
+  .second-img,
+  .third-img {
+    display: none;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    background-repeat: no-repeat;
+  }
+
+  .grid-1,
+  .grid-2 {
+    width: 39.8rem;
+  }
+
+  .grid-3,
+  .text-box {
+    width: 28rem;
+  }
+
+  .grid-1 {
+    background-image: url(img/tablet/image-grid-1.jpg);
+    height: 40rem;
+    margin-left: 6rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .grid-2 {
+    background-image: url(img/tablet/image-grid-2.jpg);
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    justify-self: right;
+    margin-right: 1.1rem;
+    height: 72rem;
+  }
+
+  .grid-3 {
+    background-image: url(img/tablet/image-grid-3.jpg);
+    height: 31.3rem;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    justify-self: flex-end;
+    margin-bottom: 1.1rem;
+  }
+
+  .text-box {
+    height: 39.6rem;
+    justify-self: flex-end;
+  }
+
+  .footer {
+    width: 103%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-box {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin-left: 0;
+  }
+
+  .footer-header {
+    width: 11.05rem;
+    height: 4rem;
+    margin-top: 0;
+  }
+  .gallery-details {
+    width: 28.1rem;
+    margin-left: 6.495rem;
+  }
+  .social-links {
+    margin-left: 13.3rem;
+  }
+
+  .location-container {
+    width: 100%;
+  }
+
+  .location-box {
+    background-image: none;
+    width: 100vw;
+    background-image: url(img/tablet/image-map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60rem;
+    background-size: cover;
+  }
+
+  .address-box {
+    display: grid;
+    grid-template-columns: 22.3rem 43.8rem;
+    gap: 6.8rem;
+    height: 43.6rem;
+    justify-content: center;
+  }
+
+  .heading-secondary--outline {
+    margin: 0rem 2.3rem;
+  }
+
+  .address-description {
+    padding: 0;
+    width: 39.8rem;
+  }
+
+  .location-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social-links--outline {
+    padding-left: 0;
+  }
+
+  .footer-description {
+    padding-left: 6.495rem;
+  }
+
+  .social-links--outline,
+  .footer-header-secondary,
+  .footer-description {
+    padding-top: 0;
+  }
+
+  .footer-container {
+    padding-top: 5.6rem;
+  }
+
+  .map-box {
+    position: absolute;
+    left: 5.0781vw;
+    top: 0;
+  }
+}
+
+/* 1144px */
+@media (min-width: 71.5em) {
+  .header-container {
+    background-image: none;
+    background-image: url(img/desktop/image-hero.jpg);
+    margin-bottom: 10rem;
+    width: 99rem;
+    background-color: #151515;
+    background-position: right;
+    margin-left: -45rem;
+  }
+
+  .header {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 31.5rem;
+    row-gap: 6.4rem;
+    padding: 15rem 0rem;
+    margin: 0 16rem;
+  }
+
+  .heading-primary {
+    font-size: 9.6rem;
+    line-height: 8.8rem;
+    width: 45.4rem;
+    color: #ffffff;
+    mix-blend-mode: difference;
+  }
+
+  .map {
+    grid-column: 2 / 3;
+  }
+
+  .gallery-details,
+  .footer-description {
+    font-size: 1.8rem;
+  }
+
+  .gallery-description,
+  .welcome-text,
+  .art-gallery-description,
+  .address-description--outline,
+  .address-description {
+    font-size: 2.2rem;
+  }
+
+  .heading-secondary,
+  .heading-tertiary {
+    font-size: 6rem;
+    height: 12rem;
+    line-height: 6rem;
+  }
+
+  .gallery-description,
+  .welcome-text,
+  .art-gallery-description,
+  .address-description--outline,
+  .address-description {
+    line-height: 3.2rem;
+  }
+
+  .footer-header-secondary,
+  .footer-description {
+    line-height: 2.8rem;
+  }
+
+  .gallery-description,
+  .heading-tertiary,
+  .welcome-text,
+  .description-box {
+    width: 35rem;
+  }
+
+  .gallery-details,
+  .footer-description {
+    width: 43rem;
+  }
+
+  .art-gallery {
+    grid-template-columns: 25.4rem 7.8rem 68rem;
+  }
+
+  .grid-1,
+  .grid-2 {
+    width: 63.5rem;
+  }
+  .grid-1 {
+    background-image: none;
+    background-image: url(img/desktop/image-grid-1.jpg);
+    margin-left: 18.5rem;
+  }
+  .grid-2 {
+    background-image: none;
+    background-image: url(img/desktop/image-grid-2.jpg);
+    justify-self: center;
+    margin-right: 0;
+    margin-top: 3rem;
+  }
+  .grid-3 {
+    background-image: none;
+    background-image: url(img/desktop/image-grid-3.jpg);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .grid-3,
+  .text-box {
+    width: 44.5rem;
+    margin-right: -6rem;
+  }
+
+  .text-box {
+    height: 37.7rem;
+  }
+
+  .heading-tertiary {
+    margin-top: 6.5rem;
+    margin-bottom: 3.2rem;
+    margin-left: 4.8rem;
+  }
+
+  .welcome-text {
+    padding: 0;
+    margin-left: 4.8rem;
+  }
+
+  .description-box {
+    margin-top: 6rem;
+  }
+
+  .gallery-details {
+    margin-left: 14.043rem;
+  }
+  .social-links {
+    margin-left: 28rem;
+  }
+
+  .location-box {
+    background-image: none;
+    background-image: url(img/desktop/image-map.png);
+  }
+
+  .map-box {
+    left: 11vw;
+  }
+
+  .address-box {
+    grid-template-columns: 35rem 54rem;
+    gap: 22rem;
+    padding-top: 10.4rem;
+    padding-left: 0rem;
+    height: 54.8rem;
+  }
+
+  .address {
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .address-description--outline {
+    margin-bottom: 3.2rem;
+  }
+
+  .address-description {
+    width: 54rem;
+    height: 12.8rem;
+  }
+
+  .heading-secondary--outline {
+    font-size: 7rem;
+    line-height: 7rem;
+    height: 14rem;
+  }
+
+  .footer-header-secondary {
+    margin-right: 14.043rem;
+    font-size: 3.1rem;
+  }
+
+  .footer-description {
+    height: 8.4rem;
+    padding-left: 0;
+  }
+}
